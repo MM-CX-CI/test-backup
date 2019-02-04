@@ -1,0 +1,40 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: "2018-12-28T20:18:19Z"
+  generation: 1
+  labels:
+    env: dev
+    team: jx
+  name: dev
+  namespace: jx
+  resourceVersion: "35951"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/environments/dev
+  uid: b79ed52e-0add-11e9-a115-0e95be5396a4
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source: {}
+  teamSettings:
+    appsRepository: http://chartmuseum.jenkins-x.io
+    buildPackName: massmutual-workloads
+    buildPackRef: master
+    buildPackUrl: https://github.com/massmutual/jx-buildpacks.git
+    gitServer: https://github.com
+    kubeProvider: aws
+    pipelineUsername: sreteam@massmutual.com
+    promotionEngine: Jenkins
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    useGitOps: true
+status: {}
