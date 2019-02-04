@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: "2018-12-28T21:39:08Z"
+  generation: 1
+  name: staging
+  namespace: jx
+  resourceVersion: "16398"
+  selfLink: /apis/jenkins.io/v1/namespaces/jx/environments/staging
+  uid: 01dd27c6-0ae9-11e9-a115-0e95be5396a4
+spec:
+  kind: Permanent
+  label: Staging
+  namespace: jx-staging
+  order: 100
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Auto
+  source:
+    url: https://bitbucket.org/m38io/environment-gullzest-staging.git
+  teamSettings: {}
+status: {}
